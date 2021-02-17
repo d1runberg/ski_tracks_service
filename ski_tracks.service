@@ -1,0 +1,9 @@
+[Unit]
+Description=Execute ski_tracks service on startup
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python /Desktop/loggerV1/button.py
+
+[Install]
+WantedBy=multi-user.target
